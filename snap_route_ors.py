@@ -3,7 +3,9 @@ import requests
 import json
 from pathlib import Path
 
-API_KEY="eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImYzMGNlYTdlYmIxYjRiZDRhMzlhMzc5NTA1MzdiYjdmIiwiaCI6Im11cm11cjY0In0="
+import os
+
+API_KEY = os.getenv("ORS_API_KEY")
 
 
 KML_PATH = "route.kml"          # <-- your input
